@@ -20,7 +20,7 @@ def shutdown_session(exception=None):
 @app.route('/')
 def start():
     now = datetime.datetime.now()
-    return render_template('start.html', nav='start', now=now)
+    return render_template('index.html', nav='start', now=now)
 
 
 @app.route('/draw')
